@@ -46,7 +46,6 @@ services:
 
   worker:
     build: .
-    container_name: fast-worker-worker
     env_file: .env
     command: npm run worker
     depends_on:

@@ -4,6 +4,13 @@ A high-performance backend service for capturing and analyzing website analytics
 
 ---
 
+## 🚀 Live Demo
+
+**Test the analytics system instantly with the minimal frontend:**  
+👉 [https://fast-worker.onrender.com](https://fast-worker.onrender.com)
+
+---
+
 ## 📋 Table of Contents
 
 - [Architecture Decision](#-architecture-decision)
@@ -165,7 +172,7 @@ These indexes enable the reporting API to aggregate millions of events in millis
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/shashix07/fast-worker
 cd fast-worker
 ```
 
@@ -178,9 +185,9 @@ Create a `.env` file in the root directory:
 ```bash
 REDIS_URL=redis://redis:6379
 POSTGRES_USER=postgres
-POSTGRES_PASSWORD=shashi007
+POSTGRES_PASSWORD=securepassword
 POSTGRES_DB=postgres
-DATABASE_URL=postgresql://postgres:shashi007@postgres:5432/postgres
+DATABASE_URL=postgresql://postgres:securepassword@postgres:5432/postgres
 ```
 
 **Important:** Use `redis` and `postgres` as hostnames (not `localhost`) because these are Docker service names.
@@ -385,7 +392,7 @@ To run multiple worker containers for higher throughput, use:
 
 ```sh
 docker compose up -d --scale worker=5
----
+```
 
 **No changes to your code or Docker Compose file are needed.**  
 Just use the `--scale worker=5` flag with Docker Compose!
@@ -482,5 +489,3 @@ fast-worker/
 | `dotenv` | Environment variable management |
 | `typescript` | Type safety |
 | `tsx` | TypeScript execution for worker |
-
----

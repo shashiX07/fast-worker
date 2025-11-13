@@ -4,13 +4,6 @@ A high-performance backend service for capturing and analyzing website analytics
 
 ---
 
-## 🚀 Live Demo
-
-**Test the analytics system instantly with the minimal frontend:**  
-👉 [https://fast-worker.onrender.com](https://fast-worker.onrender.com)
-
----
-
 ## 📋 Table of Contents
 
 - [Architecture Decision](#-architecture-decision)
